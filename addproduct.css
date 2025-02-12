@@ -1,0 +1,196 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Style */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f7f7f7; /* Light background for contrast */
+    color: #333;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* Container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    background-color: #3A9E71; /* Dark Green */
+    color: #fff;
+    text-align: center;
+    padding: 40px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Header Title */
+header h1 {
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Navigation */
+nav {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+/* Navigation List */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+/* Navigation Links */
+nav ul li {
+    margin: 10px;
+}
+
+/* Button Style */
+nav ul li a {
+    display: block;
+    text-align: center;
+    padding: 15px 30px;
+    background: linear-gradient(45deg, #6D90B0, #4C97C2); /* Soft blue gradient */
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: auto;
+}
+
+/* Button Hover Effect */
+nav ul li a:hover {
+    background: linear-gradient(45deg, #4C97C2, #6D90B0);
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Button Focus Effect */
+nav ul li a:focus {
+    outline: none;
+}
+
+/* Main Content Section */
+.main-content {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+}
+
+/* Title for Sections */
+.main-content h2 {
+    font-size: 26px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Tables */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th, table td {
+    padding: 16px;
+    text-align: left;
+    border: 1px solid #ddd;
+    font-size: 18px;
+}
+
+table th {
+    background-color: #4C97C2; /* Light Blue */
+    color: #fff;
+    font-weight: 700;
+}
+
+table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+table tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Table Buttons (Edit/Delete) */
+table a.btn {
+    display: inline-block;
+    padding: 8px 15px;
+    background-color: #6D90B0; /* Light Blue */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+table a.btn:hover {
+    background-color: #4C97C2; /* Darker Blue */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 30px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li a {
+        width: 100%;
+        padding: 15px;
+        margin: 10px 0;
+    }
+
+    .main-content {
+        padding: 20px;
+    }
+
+    table th, table td {
+        padding: 12px;
+        font-size: 16px;
+    }
+}
+
+/* Mobile View - Improving Button Sizes */
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 24px;
+    }
+
+    nav ul li a {
+        padding: 12px 20px;
+        font-size: 14px;
+    }
+
+    table th, table td {
+        padding: 10px;
+        font-size: 14px;
+    }
+}

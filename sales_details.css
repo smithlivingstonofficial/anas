@@ -1,0 +1,151 @@
+/* General container styles */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f7f7;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Header styling */
+header {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 8px 8px 0 0;
+}
+
+header h1 {
+    font-size: 36px;
+    margin: 0;
+}
+
+/* Navigation styles */
+nav ul {
+    padding: 10px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    background-color: #009688;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #00796b;
+}
+
+/* Table styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Table headers */
+th {
+    background-color: #FF5722;
+    color: white;
+    font-weight: bold;
+    padding: 15px;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+th:hover {
+    background-color: #FF3D00;
+}
+
+/* Table rows */
+td {
+    text-align: center;
+    padding: 15px;
+    font-size: 16px;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Hover effect on table rows */
+tr:hover {
+    background-color: #e7f3ff;
+    cursor: pointer;
+}
+
+/* Alternate row color */
+tr:nth-child(even) td {
+    background-color: #f2f2f2;
+}
+
+/* Footer section */
+tfoot {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: right;
+    background-color: #FF5722;
+    color: white;
+    padding: 15px;
+}
+
+/* No data available message */
+.no-records {
+    text-align: center;
+    font-size: 20px;
+    color: #FF5722;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+/* Pagination or Additional info section */
+.pagination {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.pagination a {
+    color: #009688;
+    background-color: #f1f1f1;
+    padding: 8px 16px;
+    margin: 0 5px;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.pagination a:hover {
+    background-color: #00796b;
+    color: white;
+}
+
+/* Button styling for actions */
+button {
+    background-color: #FF5722;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #e64a19;
+}

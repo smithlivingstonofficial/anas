@@ -1,0 +1,191 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Style */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f4f8;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    background-color: #FF6347; /* Tomato */
+    color: #fff;
+    text-align: center;
+    padding: 30px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Header Title */
+header h1 {
+    font-size: 36px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+/* Navigation */
+nav {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+/* Navigation List */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+/* Navigation Links */
+nav ul li {
+    margin: 10px;
+}
+
+/* Button Style */
+nav ul li a {
+    display: block;
+    text-align: center;
+    padding: 15px 30px;
+    background: linear-gradient(45deg, #00BFFF, #FF6347); /* Gradient color */
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Button Hover Effect */
+nav ul li a:hover {
+    background: linear-gradient(45deg, #FF6347, #00BFFF);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Button Focus Effect */
+nav ul li a:focus {
+    outline: none;
+}
+
+/* Main Content Section */
+.main-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Title for Sections */
+.main-content h2 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Tables */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th, table td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+    font-size: 16px;
+}
+
+table th {
+    background-color: #FF6347;
+    color: #fff;
+    font-weight: 700;
+}
+
+table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+table tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Table Buttons (Edit/Delete) */
+table a.btn {
+    display: inline-block;
+    padding: 8px 15px;
+    background-color: #00BFFF; /* Deep Sky Blue */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+table a.btn:hover {
+    background-color: #008B8B; /* Dark Cyan */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 28px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li a {
+        width: 100%;
+        padding: 15px;
+        margin: 10px 0;
+    }
+
+    .main-content {
+        padding: 10px;
+    }
+
+    table th, table td {
+        padding: 10px;
+    }
+}
+
+/* Mobile View - Improving Button Sizes */
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 22px;
+    }
+
+    nav ul li a {
+        padding: 12px 20px;
+        font-size: 14px;
+    }
+
+    table th, table td {
+        padding: 8px;
+        font-size: 14px;
+    }
+}

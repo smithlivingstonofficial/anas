@@ -1,0 +1,103 @@
+/* General Reset for Margin and Padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set the basic font for the page */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+/* Main container to center the content */
+.container {
+    width: 80%;
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Header styling */
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    color: #4CAF50;
+    font-size: 28px;
+}
+
+/* Form styling */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Input fields styling */
+form div {
+    margin-bottom: 15px;
+}
+
+form label {
+    font-size: 16px;
+    margin-bottom: 5px;
+    display: block;
+    color: #555;
+}
+
+form input[type="number"],
+form input[type="date"] {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Button styling */
+form button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+
+form button:hover {
+    background-color: #45a049;
+}
+
+/* Error message styling */
+form .error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+/* Responsive layout */
+@media (max-width: 600px) {
+    .container {
+        width: 90%;
+    }
+
+    header h1 {
+        font-size: 24px;
+    }
+
+    form input[type="number"],
+    form input[type="date"],
+    form button {
+        font-size: 14px;
+    }
+}

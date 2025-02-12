@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details</title>
+    <link rel="stylesheet" href="details.css">
+</head>
+<body>
+    <header>
+        <h1>Product Details</h1>
+    </header>
+
+    <main id="product-details">
+        <!-- Product details will be dynamically loaded -->
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Sports Shop</p>
+    </footer>
+
+    <script>
+        const productDetails = document.getElementById("product-details");
+        const product = JSON.parse(localStorage.getItem("selectedProduct"));
+
+        if (product) {
+            productDetails.innerHTML = `
+                <h2>${product.name}</h2>
+                <img src="${product.image}" alt="${product.name}">
+                <p>Price: $${product.price}</p>
+                <button onclick="orderProduct()">Order</button>
+            `;
+        }
+
+        function orderProduct() {
+            window.location.href = "order.html";
+        }
+    </script>
+</body>
+</html>
